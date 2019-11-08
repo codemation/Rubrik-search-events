@@ -5,21 +5,15 @@ A command-line utility to search all event messages with Rubrik CDM based on a p
 
     $ git clone https://github.com/codemation/Rubrik-search-events.git
 
-### 1 Create an credentials file:
-cred file should contain 'username|pw'. 
-
-Method: 
+### 1 - Create an credentials file:
+Credential file should contain username password in the following  format 'username:pw'
 
     $ echo -n 'admin:abcd1234' > ~/special_cdm_auth
 
-
-### 2 Update auth.cfg 
-within search-events folder with credential file location. 
-
-Method: 
+### 2 - Update auth.cfg 
+Within search-events folder with credential file location. 
 
     $ echo -n '~/special_cdm_auth' > auth.cfg
-
 
 ## Usage:
 
