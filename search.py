@@ -1,15 +1,6 @@
 #!/usr/bin/python3
 """
-    script for searching events using 
-
-    curl -X GET --header 'Accept: application/json' 'https://10.35.36.165/api/internal/event?event_type=Audit'
-
-    then
-
-    curl -X GET --header 'Accept: application/json' 
-    'https://10.35.36.165/api/internal/event?after_id=2019-10-31%3A11%3A3%3A%3A%3A1572521711478-266a63ee-91cc-49e4-ba5f-04b40f4f1f44&event_type=Audit'
-
-
+    See README.md
 """
 from urllib.parse import quote
 import json, os
