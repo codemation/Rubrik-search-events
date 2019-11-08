@@ -35,9 +35,9 @@ def parse_args(args):
     """
         parses:
             -n 192.168.1.10
-            --node-ip 192.168.1.10
+            --node_ip 192.168.1.10
         Returns:
-        {'-n': '192.168.1.10'} or {'--node-ip': '192.168.1.10'}
+        {'-n': '192.168.1.10'} or {'--node_ip': '192.168.1.10'}
     """
     argDict = {}
     for index, arg in enumerate(args):
@@ -85,7 +85,7 @@ def find_all_events(args):
 
 
     print(query)
-    url = f"'https://{args['--node-ip']}/api/internal/event?{query[:-1]}'"
+    url = f"'https://{args['--node_ip']}/api/internal/event?{query[:-1]}'"
     print(url)
     resultChecker=0
     while True:
@@ -110,7 +110,7 @@ def find_all_events(args):
             break
         resultChecker+=1
         safeId = quote(results["data"][-1]["id"])
-        url = f"'https://{args['--node-ip']}/api/internal/event?after_id={safeId}&{query}'"
+        url = f"'https://{args['--node_ip']}/api/internal/event?after_id={safeId}&{query}'"
 
         if resultChecker > 10:
             print("\n\nCurrent date in events search: \n")
@@ -135,13 +135,13 @@ def usage_help():
     Should only specify at most one of object_name and object_ids.
     Example:
         "Fileset:::02d72804-7cc1-4e40-a465-95a5d868f0e9,VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79879"
-        ./search.py --node-ip 10.35.36.165 
+        ./search.py --node_ip 10.35.36.165 
             --object_ids "Fileset:::02d72804-7cc1-4e40-a465-95a5d868f0e9,VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79879" 
             --status Failure  --search_string 'Could not fetch snapshot disk data'
 
 --object_name:
     Example:
-        ./search.py --node-ip 10.35.36.165 --object_name data2 --status Failure  --search_string 'Internal server error'
+        ./search.py --node_ip 10.35.36.165 --object_name data2 --status Failure  --search_string 'Internal server error'
 
 --object_type:
     Filter all the events by object type. Enter any of the following values:
@@ -156,7 +156,7 @@ def usage(message=None):
         print(message)
     print("""
 Usage: 
-    ./search.py --node-ip <ip> [options] --search-string <searchForMessage>
+    ./search.py --node_ip <ip> [options] --search-string <searchForMessage>
 
     ./search.py <--node_ip XX.XX.XX.XX > [--event_type <type>] [--status <type>][--event_type <type>] 
                 [--object_ids "VirtualMachine:::<id>,FileSet:::<id>"] [--object_name <name>] [--object_type <objtype>]

@@ -17,7 +17,7 @@ Within search-events folder with credential file location.
 
 ## Usage:
 
-    ./search.py --node-ip <ip> [options] --search-string <searchForMessage>
+    ./search.py --node_ip <ip> [options] --search-string <searchForMessage>
 
     ./search.py <--node_ip XX.XX.XX.XX > [--event_type <type>] [--status <type>][--event_type <type>] 
                 [--object_ids "VirtualMachine:::<id>,FileSet:::<id>"] [--object_name <name>] [--object_type <objtype>]
@@ -27,11 +27,11 @@ Within search-events folder with credential file location.
 
     ./search.py --node_ip 10.35.36.165 --event-type Audit --output results.log --search-string 'created local user'
 
-    ./search.py --node-ip 10.35.36.165 --object_name data2 --status Failure  --search_string 'Internal server error'
+    ./search.py --node_ip 10.35.36.165 --object_name data2 --status Failure  --search_string 'Internal server error'
 
-    ./search.py --node-ip 10.35.36.165 --object_ids "Fileset:::02d72804-7cc1-4e40-a465-95a5d868f0e9,VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79879" --status Failure  --search_string 'Could not fetch snapshot disk data'
+    ./search.py --node_ip 10.35.36.165 --object_ids "Fileset:::02d72804-7cc1-4e40-a465-95a5d868f0e9,VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79879" --status Failure  --search_string 'Could not fetch snapshot disk data'
 
-    ./search.py --node-ip 10.35.36.165 --object_name data2 --object_type LinuxFileset --status Failure  --search_string '' --output all_failures_data2_fileset.log
+    ./search.py --node_ip 10.35.36.165 --object_name data2 --object_type LinuxFileset --status Failure  --search_string '' --output all_failures_data2_fileset.log
 
     --status: 
         'Failure', 'Warning', 'Running', 'Success', 
@@ -49,13 +49,13 @@ Within search-events folder with credential file location.
         Should only specify at most one of object_name and object_ids.
         Example:
             "Fileset:::02d72804-7cc1-4e40-a465-95a5d868f0e9,VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79879"
-            ./search.py --node-ip 10.35.36.165 
+            ./search.py --node_ip 10.35.36.165 
                 --object_ids "Fileset:::02d72804-7cc1-4e40-a465-95a5d868f0e9,VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79879" 
                 --status Failure  --search_string 'Could not fetch snapshot disk data'
 
     --object_name:
         Example:
-            ./search.py --node-ip 10.35.36.165 --object_name data2 --status Failure  --search_string 'Internal server error'
+            ./search.py --node_ip 10.35.36.165 --object_name data2 --status Failure  --search_string 'Internal server error'
 
     --object_type:
         Filter all the events by object type. Enter any of the following values:
