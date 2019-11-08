@@ -1,6 +1,13 @@
 # Rubrik-search-events
 A command-line utility to search all event messages with Rubrik CDM based on a particular string. 
 
+# Get Started
+
+### 1
+Create an credentials file, containing 'username|pw'. Method: echo -n 'admin:abcd1234' > ~/special_cdm_auth
+### 2
+Update auth.cfg within search_and_restore package with credential file location. Method echo -n '~/special_cdm_auth' > auth.cfg
+
 
 ## Usage:
 
