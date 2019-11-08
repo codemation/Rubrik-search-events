@@ -17,15 +17,15 @@ Within search-events folder with credential file location.
 
 ## Usage:
 
-    ./search.py --node_ip <ip> [options] --search-string <searchForMessage>
+    ./search.py --node_ip <ip> [options] --search_string <searchForMessage>
 
     ./search.py <--node_ip XX.XX.XX.XX > [--event_type <type>] [--status <type>][--event_type <type>] 
                 [--object_ids "VirtualMachine:::<id>,FileSet:::<id>"] [--object_name <name>] [--object_type <objtype>]
-                [--output <console (default) | file-name.log ][--help] < --search-string messagestring >
+                [--output <console (default) | file-name.log ][--help] < --search_string messagestring >
 
 ## Example:
 
-    ./search.py --node_ip 10.35.36.165 --event-type Audit --output results.log --search-string 'created local user'
+    ./search.py --node_ip 10.35.36.165 ----event_type Audit --output results.log --search_string 'created local user'
 
     ./search.py --node_ip 10.35.36.165 --object_name data2 --status Failure  --search_string 'Internal server error'
 

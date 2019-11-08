@@ -1,0 +1,120 @@
+{
+    "data": [
+        {
+            "eventInfo": "{\"message\":\"admin logged in from 172.27.253.7\",\"id\":\"Audit.LoginAudit\",\"params\":{\"${username}\":\"admin\",\"${hostname}\":\"172.27.253.7\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${orgName}\":\"Global\"}}",
+            "eventSeriesId": "5bec32d7-603c-4d04-960c-26931ebe1ec2",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:12:2:::1565699182818-7921d4a8-55b3-4650-908c-37db25cf194e",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [
+                "User:::06ea45c9-a50f-4281-86e5-670714dcccd4",
+                "Organization:::b0941ff4-3916-4f58-ae0d-a4d62a812f80"
+            ],
+            "time": "Tue Aug 13 12:26:22 UTC 2019"
+        },
+        {
+            "eventInfo": "{\"message\":\"admin logged out\",\"id\":\"Audit.LogoutAudit\",\"params\":{\"${username}\":\"admin\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${orgName}\":\"Global\"}}",
+            "eventSeriesId": "8f6639cd-3b1b-4149-8e1d-08f2b970bbf6",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:08:5:::1565686655639-de50a974-0028-4ca6-9a4f-cfdb872d1c8d",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [
+                "User:::06ea45c9-a50f-4281-86e5-670714dcccd4",
+                "Organization:::b0941ff4-3916-4f58-ae0d-a4d62a812f80"
+            ],
+            "time": "Tue Aug 13 08:57:35 UTC 2019"
+        },
+        {
+            "eventInfo": "{\"message\":\"admin started a job to create an on-demand backup for vSphere VM jjamison-ubu16 in VMware vCenter 10.35.36.10\",\"id\":\"Audit.OnDemandBackupAudit\",\"params\":{\"${username}\":\"admin\",\"${orgName}\":\"Global\",\"${hierarchyRootName}\":\"10.35.36.10\",\"${snappableName}\":\"jjamison-ubu16\",\"${snappableType}\":\"vSphere VM\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${hierarchyRootType}\":\"VMware vCenter\"}}",
+            "eventSeriesId": "afed2699-a0c0-43b1-93a5-fa3b884d845e",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:08:1:::1565684070212-087e384c-2c1f-4f42-ae41-cddcb34359cf",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [
+                "VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79014",
+                "User:::06ea45c9-a50f-4281-86e5-670714dcccd4",
+                "Organization:::b0941ff4-3916-4f58-ae0d-a4d62a812f80"
+            ],
+            "time": "Tue Aug 13 08:14:30 UTC 2019"
+        },
+        {
+            "eventInfo": "{\"message\":\"admin canceled a job 'CREATE_VMWARE_SNAPSHOT_94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79014_05770996-01ec-49a4-bf08-edffcda2c638'\",\"id\":\"Audit.CancelJobAudit\",\"params\":{\"${username}\":\"admin\",\"${jobId}\":\"CREATE_VMWARE_SNAPSHOT_94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79014_05770996-01ec-49a4-bf08-edffcda2c638\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${orgName}\":\"Global\"}}",
+            "eventSeriesId": "6b12dc14-5660-47aa-954b-f5ed81e5dd18",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:08:0:::1565683642370-81ffaf25-ad1c-4e89-a0bf-60c27fc494e5",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [],
+            "time": "Tue Aug 13 08:07:22 UTC 2019"
+        },
+        {
+            "eventInfo": "{\"message\":\"admin started a job to create an on-demand backup for vSphere VM jjamison-ubu16 in VMware vCenter 10.35.36.10\",\"id\":\"Audit.OnDemandBackupAudit\",\"params\":{\"${username}\":\"admin\",\"${orgName}\":\"Global\",\"${hierarchyRootName}\":\"10.35.36.10\",\"${snappableName}\":\"jjamison-ubu16\",\"${snappableType}\":\"vSphere VM\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${hierarchyRootType}\":\"VMware vCenter\"}}",
+            "eventSeriesId": "c498b0bd-7c65-4ff5-b635-276f6c53aa7e",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:08:0:::1565683571850-91e1bcb9-43d5-4478-a39e-9db6467a9f23",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [
+                "VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79014",
+                "User:::06ea45c9-a50f-4281-86e5-670714dcccd4",
+                "Organization:::b0941ff4-3916-4f58-ae0d-a4d62a812f80"
+            ],
+            "time": "Tue Aug 13 08:06:11 UTC 2019"
+        },
+        {
+            "eventInfo": "{\"message\":\"admin started a job to remove mount '901d7e9b-ea44-4fc0-b6cf-9022410b2442'\",\"id\":\"Audit.UnmountAudit\",\"params\":{\"${username}\":\"admin\",\"${mountId}\":\"901d7e9b-ea44-4fc0-b6cf-9022410b2442\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${orgName}\":\"Global\"}}",
+            "eventSeriesId": "09631481-f409-422d-9800-4cd3bd195c74",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:08:0:::1565683217325-1baafb92-3320-4b1d-8ea0-fecb491fd48a",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [
+                "Organization:::b0941ff4-3916-4f58-ae0d-a4d62a812f80",
+                "User:::06ea45c9-a50f-4281-86e5-670714dcccd4",
+                "VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-101566",
+                "VirtualMachine:::94f70c11-0775-4562-b9a8-9d19dd4fca56-vm-79014",
+                "VmwareHost:::94f70c11-0775-4562-b9a8-9d19dd4fca56-host-59839"
+            ],
+            "time": "Tue Aug 13 08:00:17 UTC 2019"
+        },
+        {
+            "eventInfo": "{\"message\":\"admin started a job to refresh vCenter '10.35.36.10'\",\"id\":\"Audit.RefreshVcenterAudit\",\"params\":{\"${username}\":\"admin\",\"${vcenterAddress}\":\"10.35.36.10\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${orgName}\":\"Global\"}}",
+            "eventSeriesId": "6ac78885-1056-40cc-9e6f-2018bdaa7ce1",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:07:5:::1565683152340-3892055c-edea-4bcb-8077-b9251ad93463",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [
+                "vCenter:::94f70c11-0775-4562-b9a8-9d19dd4fca56",
+                "User:::06ea45c9-a50f-4281-86e5-670714dcccd4",
+                "Organization:::b0941ff4-3916-4f58-ae0d-a4d62a812f80"
+            ],
+            "time": "Tue Aug 13 07:59:12 UTC 2019"
+        },
+        {
+            "eventInfo": "{\"message\":\"admin logged in from 172.27.253.7\",\"id\":\"Audit.LoginAudit\",\"params\":{\"${username}\":\"admin\",\"${hostname}\":\"172.27.253.7\",\"${orgId}\":\"b0941ff4-3916-4f58-ae0d-a4d62a812f80\",\"${orgName}\":\"Global\"}}",
+            "eventSeriesId": "a933297e-d5fb-462c-bd80-ef9131ad5526",
+            "eventStatus": "Success",
+            "eventType": "Audit",
+            "id": "2019-08-13:07:5:::1565683095783-f0a4fda3-1c52-4b1b-b5e1-4a0013db1b32",
+            "objectId": "06ea45c9-a50f-4281-86e5-670714dcccd4",
+            "objectType": "UserActionAudit",
+            "relatedIds": [
+                "User:::06ea45c9-a50f-4281-86e5-670714dcccd4",
+                "Organization:::b0941ff4-3916-4f58-ae0d-a4d62a812f80"
+            ],
+            "time": "Tue Aug 13 07:58:15 UTC 2019"
+        }
+    ],
+    "hasMore": false
+}
